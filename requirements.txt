@@ -1,0 +1,10 @@
+# PyTorch is installed separately with the CUDA index URL (see README):
+#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu128
+numpy
+h5py
+unidecode          # needed by emg2qwerty.charset
+omegaconf          # checkpoint hyperparameters are pickled as omegaconf objects
+fastapi
+uvicorn[standard]
+websockets
+pytest

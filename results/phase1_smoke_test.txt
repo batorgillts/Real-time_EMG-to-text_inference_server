@@ -1,0 +1,13 @@
+﻿[load] generic.ckpt: 5.29M params on cuda, receptive field 125 frames = 2048 samples (1024 ms)
+[data] 2020-08-13-1597354281-keystrokes.hdf5: user=09456349 condition=on_keyboard 624s of EMG, shape (1247947, 2, 16)
+[spec] max |ours - torchaudio| = 1.88e-04
+[stream] 368 windows of 2352 samples, stride 320 -> 7360 frames; offline 7373 frames
+[stream] max |offline - streamed| log-prob = 2.36e-04; greedy text identical: True
+[cer] 3893 windows in 6.1s; greedy CER (no LM) = 12.5% (4300 predicted vs 4361 true chars)
+[cer] truth[:120]: 'final fantasy ix music⏎alanduthe quick brown fox jumps over a lazy dog⏎asus earthquake deserve meters⏎thehun hometown na'
+[cer] pred [:120]: 'fual ranty is muic⏎lpnslandunfue quick brown fox jumps over a lazy dog⏎aus earthauake dererge meters⏎thehun homefown har'
+[latency] real  batch= 1: p50   8.43 ms  p99   9.43 ms  (8.43 ms/window)
+[latency] real  batch= 8: p50   9.36 ms  p99  10.10 ms  (1.17 ms/window)
+[latency] real  batch=32: p50  27.34 ms  p99  29.07 ms  (0.85 ms/window)
+[synthetic] contract OK, output (4, 20, 99); batch=1 p50 0.76 ms p99 1.83 ms
+[gpu] peak memory 1.28 GB

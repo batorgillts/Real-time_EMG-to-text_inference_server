@@ -1,0 +1,9 @@
+# Meta's repo (+1.1 GB LFS checkpoints) is cloned locally, not vendored
+third_party/
+data/
+*.hdf5
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+results/raw/
